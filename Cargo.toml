@@ -9,7 +9,6 @@ readme = "readme.md"
 homepage = "https://github.com/MailboxValidator/mailboxvalidator-rust"
 repository = "https://github.com/MailboxValidator/mailboxvalidator-rust/"
 license = "MIT"
-license-file = "LICENSE.txt"
 keywords = ["email", "validation", "validator", "free", "disposable"]
 categories = ["email", "accessibility"]
 
