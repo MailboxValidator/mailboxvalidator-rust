@@ -1,0 +1,27 @@
+[package]
+name = "mailboxvalidator"
+version = "1.0.0"
+authors = ["MailboxValidator <support@mailboxvalidator.com>"]
+edition = "2021"
+description = "Email verification package for Rust using MailboxValidator API. It validates if the email is valid, from a free provider, contains high-risk keywords, whether it's a catch-all address and so much more."
+documentation = "https://docs.rs/mailboxvalidator"
+readme = "readme.md"
+homepage = "https://github.com/MailboxValidator/mailboxvalidator-rust"
+repository = "https://github.com/MailboxValidator/mailboxvalidator-rust/"
+license = "MIT"
+license-file = "LICENSE.txt"
+keywords = ["email", "validation", "validator", "free", "disposable"]
+categories = ["email", "accessibility"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "*", features = ["blocking", "json"] }
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+serde_with = "*"
+
+[lib]
+name = "mailboxvalidator"
+path = "src/lib.rs"
+doc = true
