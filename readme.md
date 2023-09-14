@@ -11,7 +11,7 @@ This module can be useful in many types of projects, for example
 
 # Installation
 
-Just add `mailboxvalidator = "1.0.0"` into your *Cargo.toml*.
+Just add `mailboxvalidator = "1.1.0"` into your *Cargo.toml*.
 
 # Dependencies
 
@@ -90,8 +90,7 @@ let validation_result = mailboxvalidator::validate_email("example@example.com",P
 match validation_result {
     Ok(num) => {
         let ok_result = num;
-        assert_eq!(ok_result["status"], "False");
-        assert_eq!(ok_result["error_code"], "");
+        println!("{:#?}", ok_result);
     },
     Err(err) => println!("{:#?}", err),
 };
@@ -107,8 +106,7 @@ let validation_result = mailboxvalidator::is_disposable_email("example@example.c
 match validation_result {
     Ok(num) => {
         let ok_result = num;
-        assert_eq!(ok_result["is_disposable"], "True");
-        assert_eq!(ok_result["error_code"], "");
+        println!("{:#?}", ok_result);
     },
     Err(err) => println!("{:#?}", err),
 };
@@ -124,8 +122,7 @@ let validation_result = mailboxvalidator::is_free_email("example@example.com",PA
 match validation_result {
     Ok(num) => {
         let ok_result = num;
-        assert_eq!(ok_result["is_free"], "False");
-        assert_eq!(ok_result["error_code"], "");
+        println!("{:#?}", ok_result);
     },
     Err(err) => println!("{:#?}", err),
 };
