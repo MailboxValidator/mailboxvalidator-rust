@@ -1,3 +1,6 @@
+![Crates.io](https://img.shields.io/crates/d/mailboxvalidator)
+
+
 # MailboxValidator Rust package
 
 This Rust package enables user to easily validate if an email address is valid, a type of disposable email or free email.
@@ -141,4 +144,4 @@ match validation_result {
 
 # Copyright
 
-Copyright (C) 2018-2021 by MailboxValidator.com, [support@mailboxvalidator.com](mailto:support@mailboxvalidator.com)
+Copyright (C) 2018-2024 by MailboxValidator.com, [support@mailboxvalidator.com](mailto:support@mailboxvalidator.com)
