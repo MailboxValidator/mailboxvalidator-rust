@@ -28,7 +28,7 @@
 //! };
 //! ```
 
-#![doc(html_root_url = "https://docs.rs/mailboxvalidator/1.0.0")]
+#![doc(html_root_url = "https://docs.rs/mailboxvalidator/1.1.1")]
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
@@ -52,6 +52,7 @@ pub type MailboxValidatorResult<T> = Result<T, ReqError>;
 #[derive(PartialEq, Debug, Clone, Serialize, Deserialize)]
 pub struct SingleEmailValidationRecord {
     email_address: String,
+    base_email_address: String,
     domain: String,
     is_free: Option<bool>,
     is_syntax: Option<bool>,
@@ -65,6 +66,9 @@ pub struct SingleEmailValidationRecord {
     is_role: Option<bool>,
     is_high_risk: Option<bool>,
     is_catchall: Option<bool>,
+    is_dmarc_enforced: Option<bool>,
+    is_strict_spf: Option<bool>,
+    website_exist: Option<bool>,
     status: Option<bool>,
     mailboxvalidator_score: f64,
     time_taken: f64,

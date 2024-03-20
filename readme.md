@@ -1,6 +1,5 @@
 ![Crates.io](https://img.shields.io/crates/d/mailboxvalidator)
 
-
 # MailboxValidator Rust package
 
 This Rust package enables user to easily validate if an email address is valid, a type of disposable email or free email.
@@ -135,12 +134,12 @@ match validation_result {
 
 | error_code | error_message         |
 | ---------- | --------------------- |
-| 100        | Missing parameter.    |
-| 101        | API key not found.    |
-| 102        | API key disabled.     |
-| 103        | API key expired.      |
-| 104        | Insufficient credits. |
-| 105        | Unknown error.        |
+| 10000        | Missing parameter.    |
+| 10001        | API key not found.    |
+| 10002        | API key disabled.     |
+| 10003        | API key expired.      |
+| 10004        | Insufficient credits. |
+| 10005        | Unknown error.        |
 
 # Copyright
 
